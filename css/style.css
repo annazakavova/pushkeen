@@ -12,7 +12,49 @@ body {
 	padding: 0 15px;
 
 }
-
+.header__page {
+	position: relative;
+}
+.main__page {
+	position: relative;
+}
+.page1 {
+	position: absolute;
+	top: 200px;
+	left: 5px;
+}
+.page2 {
+	position: absolute;
+	top: 200px;
+	left: 5px;
+}
+.page1 li:not(:first-child){
+	font-weight: 700;
+	font-size: 22px;
+	line-height: 218.18%;
+	letter-spacing: 0.02em;
+	text-transform: uppercase;
+	color: #3A3A3A;
+}
+.page__current {
+	font-weight: 700;
+	font-size: 22px;
+	line-height: 218.18%;
+	letter-spacing: 0.02em;
+	text-transform: uppercase;
+	color: #04F1FF;
+}
+.page__line {
+	overflow: hidden;
+}
+.page__line::after {
+	content: "";
+	border: 2px solid #2D2D2D;
+	transform: rotate(-90deg);
+	align-items: center;
+	text-align: center;
+	width: 100px;
+}
 /* ------------------------------------------------------------------------------------------------------------------------------------------------------------- */
 /* HEADER */
 .header {
@@ -49,7 +91,7 @@ body {
 .header__new-collection {
 	position: absolute;
 	top: 60px;
-	left: -90px;
+	left: -78px;
 
 	font-size: 22px;
 	line-height: 318%;
@@ -60,7 +102,7 @@ body {
 .header__pushkeen {
 	position: absolute;
 	top: 145px;
-	right: -170px;
+	right: -163px;
 
 	font-size: 22px;
 	line-height: 318%;
@@ -73,6 +115,7 @@ body {
 .header__text {
 }
 .text__name {
+	font-family: 'TippytoesBold';
 	font-weight: 700;
 	font-size: 150px;
 	line-height: 119%;
@@ -103,7 +146,6 @@ body {
 	display: flex;
 	text-align: center;
 	align-items: center;
-
 	position: relative;
 }
 .info__svg {
@@ -129,10 +171,11 @@ body {
 .main {
 }
 .intro {
+	background: linear-gradient(180deg, #000000 29.71%, rgba(0, 0, 0, 0) 83.91%);
+
 }
 .intro__img {
 	padding-top: 91px;
-
 }
 .intro__text-map {
 	display: flex;
@@ -140,6 +183,7 @@ body {
 }
 .intro__text {
 	margin-left: 94px;
+	margin-top: 40px;
 }
 .intro__title {
 	font-weight: 700;
@@ -162,16 +206,128 @@ body {
 	color: #FFFFFF;
 	margin-top: 11px;
 	text-decoration: underline;
+	margin-bottom: 40px;
 }
 .intro__map {
 	position: absolute;
-	width: 100%;
-	top: -250px;
+	top: -30px;
 	left: 450px;
-	z-index: -5;
 }
-.map__img {
+.map__img img{
+}
 
+.map__title {
+	position: relative;
+}
+.map__text-point {
+	position: absolute;
+	width: 250px;
+	z-index: 1;
+	top: 130px;
+	left: 100px;
+	text-align: center;
 }
 .map__text {
+	font-family: 'TippytoesBold';
+	font-weight: 700;
+	font-size: 40px;
+	line-height: 120%;
+	color: #FFFFFF;
+}
+.swiper__img {
+	margin-bottom: 82px;
+}
+.swiper__button {
+	display: flex;
+	justify-content: center;
+}
+.btn__rare {
+	font-family: 'SFProDisplay';
+	font-weight: 600;
+	line-height: 227.7%;
+	width: 192px;
+	color: #000000;
+	background: #04F1FF;
+	margin-right: 23px;
+}
+.btn__really-rare {
+	font-family: 'SFProDisplay';
+	font-weight: 600;
+	line-height: 227.7%;
+	color: #04F1FF;
+	border: 1px solid #04F1FF;
+	width: 192px;
+}
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+/* SLIDER */
+.swiper {
+	width: 600px;
+	height: 300px;
+}
+.swiper-wrapper {
+}
+.swiper-slide img {
+	width: 100%;
+}
+.swiper-pagination {
+}
+.swiper-button-prev {
+}
+.swiper-button-next {
+}
+.swiper-scrollbar {
+}
+.swiper__titly {
+	font-weight: 700;
+	font-size: 24px;
+	line-height: 33px;
+	text-transform: uppercase;
+	color: #04F1FF;
+	text-align: center;
+	padding-top: 44px;
+
+}
+.swaper__subtitle {
+	font-family: 'TippytoesBold';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 50px;
+	line-height: 60px;
+	color: #FFFFFF;
+	text-align: center;
+	padding-top: 22px;
+}
+.content {
+	display: flex;
+	align-items: center;
+	padding-bottom: 77px;
+}
+.countent__title {
+}
+.content__quotes1 {
+	font-family: 'TippytoesXTraBold';
+	font-weight: 700;
+	font-size: 40px;
+	line-height: 49px;
+	color: #FFFFFF;
+	transform: matrix(1, -0.05, 0.05, 1, 0, 0);
+	margin: 0 auto 5px 86px;
+}
+.content__quotes2 {
+	font-family: 'TippytoesXTraBold';
+	font-weight: 700;
+	font-size: 40px;
+	line-height: 49px;
+	color: #FFFFFF;
+	transform: matrix(-1, 0, 0, -1, 0, 0);
+	margin: 5px 0 auto auto;
+}
+.content__text {
+	width: 468px;
+	margin-left: 80px;
+	line-height: 26px;
+}
+.content__img img { 
+	margin-left: 173px;
+	
 }

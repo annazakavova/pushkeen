@@ -7,6 +7,9 @@
 	<title>pushkeen</title>
 
 	<!-- TippyToes, SF Pro Display fonts -->
+	<link rel="stylesheet" href="../pushkeen/css/stylesheet.css">
+
+	<link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
 
 	<link rel="stylesheet" href="../pushkeen/css/reset.css">
 	<link rel="stylesheet" href="../pushkeen/css/style.css">
@@ -38,6 +41,16 @@
 					<a href="#" class="nav__link">PUSHKEEN & BACK TO THE ROOTS</a>
 				</div>
 			</div>
+			<div class="header__page">
+				<ul class="page1">
+					<li class="page__current">01</li>
+					<li class="page__line"></li>
+					<li>02</li>
+					<li>03</li>
+					<li>04</li>
+					<li>05</li>
+				</ul>
+			</div>
 			<div class="header__text">
 				<h1 class="text__name">Bubble Drop</h1>
 			</div>
@@ -48,14 +61,22 @@
 					<div class="info__text">420 tokens</div>
 				</div>
 			</div>
-
-
 		</div>
 	</header>
 
 	<main class="main">
 		<div class="container">
-			<div class="intro">
+			<div class="main__page">
+				<ul class="page2">
+					<li>01</li>
+					<li class="page__current">02</li>
+					<li class="page__line"></li>
+					<li>03</li>
+					<li>04</li>
+					<li>05</li>
+				</ul>
+			</div>
+			<section class="intro">
 				<div class="intro__img">
 					<img src="../pushkeen/img/intro/1.png" alt="intro__img">
 				</div>
@@ -67,18 +88,64 @@
 						<div class="intro__link"><a href="#">Читать больше в статье</a></div>
 					</div>
 					<div class="intro__map">
-						<div class="map__img"><img src="../pushkeen/img/intro/3" alt="map__img"></div>
-						<div class="map__text">Команда Bubble </div>
+						<div class="map__img"><img src="../pushkeen/img/intro/3.svg" alt="map__img"></div>
+					</div>
+					<div class="map__title">
+						<div class="map__text-point">
+							<div class="map__point"><img src="../pushkeen/img/intro/4.svg" alt="map__point"></div>
+							<div class="map__text">Команда Bubble</div>
+						</div>
 					</div>
 				</div>
+			</section>
+			<div class="swiper__img">
+				<img src="../pushkeen/img/slider/img/1.png" alt="swiper__img">
 			</div>
+			<div class="swiper__button">
+				<button class="btn__rare" type="button">Редкие</button>
+				<button class="btn__really-rare" type="button">Очень редкие</button>
+			</div>
+			<div class="swiper__page">
+				<ul class="page3">
+					<li>01</li>
+					<li>02</li>
+					<li class="page__current">03</li>
+					<li class="page__line"></li>
+					<li>04</li>
+					<li>05</li>
+				</ul>
+			</div>
+			<div class="swiper">
+				<!-- Additional required wrapper -->
+				<div class="swiper-wrapper">
+				  <!-- Slides -->
+				  <div class="swiper-slide"><img src="../pushkeen/img/slider/sliders/1.png" alt="sliders1"></div>
+				  <div class="swiper-slide"><img src="../pushkeen/img/slider/sliders/2.png" alt="sliders2"></div>
+				  <div class="swiper-slide"><img src="../pushkeen/img/slider/sliders/3.png" alt="sliders3"></div>
+				  <div class="swiper-slide"><img src="../pushkeen/img/slider/sliders/4.png" alt="sliders4"></div>
+				</div>
+				<!-- If we need navigation buttons -->
+				<div class="swiper-button-prev"></div>
+				<div class="swiper-button-next"></div>
+			 
+				<!-- If we need scrollbar -->
+				<div class="swiper-scrollbar"></div>
+			 </div>
+			<h1 class="swiper__titly">Елена денисова</h1>
+			<p class="swaper__subtitle">«bub1»</p>
+			 <section class="content">
+				 <div class="countent__title">
+					<p class="content__quotes1">бб</p>
+					<h1 class="content__text">Фрилансер моушн дизайнер, иллюстратор и энтузиаст Бэн Марриот из Сиднея собирает классные свежие подборки анимационных работ. У него хороший вкус и выбранные ним работы точно вдохновят вас на что-то клёвое. От рекламных роликов до снимков продукта, маркетинговых кампаний и дизайна игр, используя возможности 3D открываются новые двери для отображения картин.</h1>
+					<p class="content__quotes2">бб</p>
+				 </div>
+				 <div class="content__img"><img src="../pushkeen/img/content/1.png" alt="content__img"></div>
+			 </section>
 		</div>
 	</main>
 
 
-	<footer class="footer">
-		<div class="container"></div>
-	</footer>
-	
+	<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+	<script src="../pushkeen/js/main.js"></script>
 </body>
 </html>

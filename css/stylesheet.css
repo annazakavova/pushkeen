@@ -1,0 +1,26 @@
+/* Open Sans fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@400;600;700;800&family=Playfair+Display:wght@600;700&display=swap');
+
+/* SF Pro Display fonts */
+@font-face {
+	font-family: 'SFProDisplay';
+	src: url('../fonts/SFProDisplay.otf');
+	src: url('../fonts/SFProDisplay.woff') format('woff'),
+		  url('../fonts/SFProDisplay.ttf') format('truetype');
+		 font-weight: 600;
+	}
+/* Tippy Toes fonts */
+@font-face {
+	font-family: 'TippytoesBold';
+	src: url('../fonts/TippytoesBold.otf');
+	src: url('../fonts/TippytoesBold.woff') format('woff'),
+		  url('../fonts/TippytoesBold.ttf') format('truetype');
+		 font-weight: 700;     
+	}
+@font-face {
+	font-family: 'TippytoesXTraBold';
+	src: url('../fonts/TippytoesXTraBold.otf');
+	src: url('../fonts/TippytoesXTraBold.woff') format('woff'),
+		  url('../fonts/TippytoesXTraBold.ttf') format('truetype');
+		 font-weight: 700;   
+	}
