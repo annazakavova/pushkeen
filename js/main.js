@@ -1,63 +1,91 @@
-// const { default: Swiper } = require("swiper");
+// SVIPER
 
-// const swiper = new Swiper('.swiper', {
-// 	// Optional parameters
-// 	direction: 'vertical',
-// 	loop: true,
- 
-// 	// If we need pagination
-// 	pagination: {
-// 	  el: '.swiper-pagination',
-// 	},
- 
-// 	// Navigation arrows
-// 	navigation: {
-// 	  nextEl: '.swiper-button-next',
-// 	  prevEl: '.swiper-button-prev',
-// 	},
- 
-// 	// And if we need scrollbar
-// 	scrollbar: {
-// 	  el: '.swiper-scrollbar',
-// 	},
-//  });
+let myImageSlider = new Swiper('.image-slider', {
+	// Navigation arrows
+	navigation: {
+		nextEl: '.swiper-button-next',
+		prevEl: '.swiper-button-prev',
+	 },
+	 pagination: {
+
+	 },
+	//  touchRadio: 1,
+	//  touchAngle: 45,
+	//  grabCursor: true,
+	 slideToClickedSlide: true,
+
+	 hashNavigation: {
+		 	watchState: true,
+	 },
+	 keyboard: {
+		 enabled: true,
+		 onlyInViewport: true,
+		 pageUpDown: true,
+	 },
+	//  mousewheel: {
+	// 	sensitivity: 1,
+	// 	eventsTarget: ".image-slider"
+	//  },
+	 slidesPerView: 3,
+	 spaceBetween: 80,
+	 slidesPerGroup: 1,
+	 centeredSlides: true,
+	 loop: true,
+	 loopFillGroupWithBlank: true,
+
+	 breakpoints: {
+		 320: {
+			 slidesPerView: 1,
+		 },
+		 480: {
+			slidesPerView: 2,
+		},
+		992: {
+			slidesPerView: 3,
+		},
+	 },
+	 observer: true,
+	 observerParents: true,
+	 observerSlideChildren: true,
+});
+
+new Swiper('.text-slider', {
+	// Navigation arrows
+	navigation: {
+		nextEl: '.swiper-button-next',
+		prevEl: '.swiper-button-prev',
+	 },
+	//  touchRadio: 1,
+	//  touchAngle: 45,
+	//  grabCursor: true,
+	//  slideToClickedSlide: true,
+
+	 keyboard: {
+		 enabled: true,
+		 onlyInViewport: true,
+		 pageUpDown: true,
+	 },
+	//  mousewheel: {
+	// 	sensitivity: 1,
+	// 	eventsTarget: ".text-slider"
+	//  },
+	 slidesPerView: 1,
+	 slidesPerGroup: 1,
+	 centeredSlides: true,
+	 loop: true,
+	 loopFillGroupWithBlank: true,
+
+	 observer: true,
+	 observerParents: true,
+	 observerSlideChildren: true,
+	 nasted: true,
+})
+
+myImageSlider.controller.control = myTextSlider;
+myTextSlider.controller.control = myImageSlider;
 
 
 
-SWIPER
-//  var Swiper = new Swiper ('.image-slider', {
-// 	navigator: {
-// 		nextEl: ".swiper-button-next",
-//     	prevEl: ".swiper-button-prev",
-// 	},
-// 	pagination: {
-// 		el: '.swiper-pagination',
-// 		type: 'fraction',
-// 		renderFraction: function (currentClass, totalClass) {
-// 			return 'photo <span class="' + currentClass + '"></span>' +
-// 			' из ' + '<span class="' + totalClass + '"></span>';
-// 		},
-// 	},
-	
-//  });
 
-// Instantiate the Bootstrap carousel
-$('.multi-item-carousel').carousel({
-	interval: false
- });
- 
- // for every slide in carousel, copy the next slide's item in the slide.
- // Do the same for the next, next item.
- $('.multi-item-carousel .item').each(function(){
-	var next = $(this).next();
-	if (!next.length) {
-	  next = $(this).siblings(':first');
-	}
-	next.children(':first-child').clone().appendTo($(this));
-	
-	if (next.next().length>0) {
-	  next.next().children(':first-child').clone().appendTo($(this));
-	} else {
-		$(this).siblings(':first').children(':first-child').clone().appendTo($(this));
-	}
- });
+
+// BUTTON
