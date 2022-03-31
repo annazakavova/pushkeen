@@ -9,9 +9,9 @@ let myImageSlider = new Swiper('.image-slider', {
 	 pagination: {
 
 	 },
-	//  touchRadio: 1,
-	//  touchAngle: 45,
-	//  grabCursor: true,
+	 touchRadio: 1,
+	 touchAngle: 45,
+	 grabCursor: true,
 	 slideToClickedSlide: true,
 
 	 hashNavigation: {
@@ -55,10 +55,10 @@ new Swiper('.text-slider', {
 		nextEl: '.swiper-button-next',
 		prevEl: '.swiper-button-prev',
 	 },
-	//  touchRadio: 1,
-	//  touchAngle: 45,
-	//  grabCursor: true,
-	//  slideToClickedSlide: true,
+	 touchRadio: 1,
+	 touchAngle: 45,
+	 grabCursor: true,
+	 slideToClickedSlide: true,
 
 	 keyboard: {
 		 enabled: true,
@@ -83,9 +83,3 @@ new Swiper('.text-slider', {
 
 myImageSlider.controller.control = myTextSlider;
 myTextSlider.controller.control = myImageSlider;
-
-
-
-
-
-// BUTTON
